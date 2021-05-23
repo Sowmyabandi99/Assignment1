@@ -132,13 +132,13 @@ columns=fullflexible
 \renewcommand{\thetable}{\theenumi}
 Download all python codes from 
 \begin{lstlisting}
-https://https://github.com/Sowmyabandi99/Assignment1/blob/main/assignment1.py
+https://github.com/Sowmyabandi99/Assignment.1/blob/main/Assignment1.py
 \end{lstlisting}
 %
 and latex-tikz codes from 
 %
 \begin{lstlisting}
-https://https://github.com/Sowmyabandi99/Assignment1/blob/main/main.tex
+https://github.com/Sowmyabandi99/Assignment.1/blob/main/main.tex
 \end{lstlisting}
 %
 \section{Question No.2.7}
@@ -156,29 +156,50 @@ The vertex  $\vec{A}$ can  be expressed  in {\em polar coordinate form} as
 \vec{A} = c\myvec{\cos \theta\\  \sin \theta} ,\vec{B} = \myvec{0\\0},\vec{C} = \myvec{a\\0},
 \end{align}
 
-where
+
+From $\triangle ABC$,we use the law of cosines: 
+
 \begin{align}
-c = \sqrt{a^2+b^2},   \theta = 45^{\degree}
+b^2 = a^2 + c^2 - 2ac CosB
+\\
+c^2 - b^2 + a^2 - 2ac CosB = 0
+\\
+(c+b)(c-b) + 8^2 - 2(8)(\frac{1}{\sqrt{2}})c = 0 \quad \brak{\because \angle B = 45^{\degree}}
+\\
+3.5(c+b) + 64 - 11.31c = 0 \quad \brak{\because c-b = 3.5}
+\\
+\implies 7.81c - 3.5b = 64
 \end{align}
+
+And we have,
+\begin{align}
+c - b = 3.5
+\end{align}
+
+which can be expressed as the matrix equation
+\begin{equation}
+\begin{bmatrix}
+7.81 & -3.5 \\
+1 & -1
+\end{bmatrix}
+\begin{bmatrix}
+c \\ b 
+\end{bmatrix}
+=
+\begin{bmatrix}
+64 \\ 3.5
+\end{bmatrix}
+
+\end{equation}
 
 Therefore,
-
 \begin{align}
-c^2 = a^2 + b^2
-\\
-c^2 = 8^2 + (c-3.5)^2   \quad \brak{\because c-b = 3.5}
-\\
-c^2 = 64 + c^2 + 12.25 - 7c
-\\
-76.25 - 7c = 0
-\\
-c = 10.89
+c = 12
 \end{align}
 
-so,the vertices of $\triangle ABC$ are
-
+So,the vertices of $\triangle ABC$ are
 \begin{align}
-\vec{A} = 10.89\myvec{\cos45\\\sin45} = \myvec{5.66\\9.25} ,\vec{B} = \myvec{0\\0},\vec{C} = \myvec{8\\0}
+\vec{A} = 12\myvec{\cos45\\\sin45} = \myvec{8.4\\8.4} ,\vec{B} = \myvec{0\\0},\vec{C} = \myvec{8\\0}
 \end{align}
 
 
@@ -187,7 +208,7 @@ Plot of the  $\triangle ABC$:
 \numberwithin{figure}{section}
 \begin{figure}[ht]
     \centering
-    \includegraphics[width=\columnwidth]{Fig.1.png}
+    \includegraphics[width=\columnwidth]{Fig1.png}
     \caption{$\triangle ABC$}
     \label{fig:$\triangle LMN$}
 \end{figure}
