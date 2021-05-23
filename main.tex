@@ -145,65 +145,48 @@ https://github.com/Sowmyabandi99/Assignment.1/blob/main/main.tex
 \item In $\triangle ABC$,  $a = 8, \angle B = 45^{\degree}$ and $c-b = 3.5$.
 Sketch $\triangle ABC$.
  
-
-
 \section{SOLUTION}
  
 The vertex  $\vec{A}$ can  be expressed  in {\em polar coordinate form} as
 %\label{prob:tri_polar}
-
 \begin{align}
 \vec{A} = c\myvec{\cos \theta\\  \sin \theta} ,\vec{B} = \myvec{0\\0},\vec{C} = \myvec{a\\0},
 \end{align}
 
-
 From $\triangle ABC$,we use the law of cosines: 
-
 \begin{align}
 b^2 = a^2 + c^2 - 2ac CosB
 \\
-c^2 - b^2 + a^2 - 2ac CosB = 0
+c^2 - b^2 + a^2 - 2ac CosB &= 0
 \\
-(c+b)(c-b) + 8^2 - 2(8)(\frac{1}{\sqrt{2}})c = 0 \quad \brak{\because \angle B = 45^{\degree}}
+(c+b)(c-b) + 8^2 - 2(8)(\frac{1}{\sqrt{2}})c &= 0 \quad \brak{\because \angle B = 45^{\degree}}
 \\
-3.5(c+b) + 64 - 11.31c = 0 \quad \brak{\because c-b = 3.5}
+\frac{35}{10}(c+b) + 64 - \frac{1131}{100}c &= 0 \quad \brak{\because c-b = 3.5}
 \\
-\implies 7.81c - 3.5b = 64
+\implies 781c - 350b &= 6400
 \end{align}
 
 And we have,
 \begin{align}
 c - b = 3.5
+\\
+\implies 10c - 10b = 35
 \end{align}
 
 which can be expressed as the matrix equation
-\begin{equation}
-\begin{bmatrix}
-7.81 & -3.5 \\
-1 & -1
-\end{bmatrix}
-\begin{bmatrix}
-c \\ b 
-\end{bmatrix}
-=
-\begin{bmatrix}
-64 \\ 3.5
-\end{bmatrix}
-
-\end{equation}
+\begin{align}
+\myvec{781 & -350\\10 & -10}\myvec{c\\b} = \myvec{6400\\35}
+\end{align}
 
 Therefore,
 \begin{align}
-c = 12
+\myvec{c\\b}=\myvec{12\\8.5}
 \end{align}
 
 So,the vertices of $\triangle ABC$ are
 \begin{align}
 \vec{A} = 12\myvec{\cos45\\\sin45} = \myvec{8.4\\8.4} ,\vec{B} = \myvec{0\\0},\vec{C} = \myvec{8\\0}
 \end{align}
-
-
-
 Plot of the  $\triangle ABC$:
 \numberwithin{figure}{section}
 \begin{figure}[ht]
@@ -216,12 +199,3 @@ Plot of the  $\triangle ABC$:
  
  
  
-    
-    
-
-
-
-
-
-
-
