@@ -8,7 +8,7 @@ Original file is located at
 """
 
 import numpy as np
-
+import math
 
 def dir_vec(A,B):
   return B-A
@@ -171,17 +171,17 @@ import shlex
 #Sides
 a = 8
 
-# 781c-350b = 6400
-# 10c-10b = 35
+#(35-80*sqrt(2))c+35b=-640
+#10c-10b=35
 
 #Calculating c and b
-A = np.array([[781,-350],[10,-10]])
-b = np.array([6400,35])
+A = np.array([[35-80*math.sqrt(2),35],[10,-10]])
+b = np.array([-640,35])
 x = np.linalg.solve(A,b)
 print(x)
 
 #Triangle vertices
-A = np.array([8.4,8.4]) 
+A = np.array([5.9*math.sqrt(2),5.9*math.sqrt(2)]) 
 B = np.array([0,0]) 
 C = np.array([8,0]) 
 
